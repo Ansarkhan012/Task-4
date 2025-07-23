@@ -1,0 +1,176 @@
+nav {
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .nav {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-link a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link a:hover {
+    color: #5e5e5e;
+  }
+  
+  .contact {
+    padding: 3rem 1rem;
+    background-color: #fff;
+  }
+  
+  .contact .content {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .contact h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .contact p {
+    color: #555;
+  }
+  
+  .form-container {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 95%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #222425;
+  }
+  
+  button[type="submit"] {
+    padding: 12px 20px;
+    background-color: #27292b;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #44484d;
+  }
+  
+  
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+  }
+  
+  input.error-border,
+  textarea.error-border {
+    border-color: red;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #343a40;
+    color: #fff;
+    margin-top: 2rem;
+  }
+
+
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+      color: #333;
+    }
+  
+    .nav {
+      display: none;
+      flex-direction: column;
+      background-color: #ffffff;
+      position: absolute;
+      top: 65px;
+      right: 20px;
+      width: 200px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+  
+    .nav.show {
+      display: flex;
+    }
+    .footer {
+      font-size: 0.85rem;
+      padding: 15px 5px;
+    }
+
+    .contact {
+        padding: 2rem 1rem;
+      }
+    
+      .contact h1 {
+        font-size: 1.5rem;
+      }
+    
+      .footer {
+        font-size: 0.85rem;
+        padding: 15px 5px;
+        margin-top: 70%;
+      }
+  
+    
+  
+   
+  }
